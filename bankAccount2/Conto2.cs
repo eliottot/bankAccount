@@ -78,7 +78,7 @@ namespace bankAccount2
             RimuoviSoldi(importoDaPrelevare);
         }
 
-        private void Conto1_Load(object sender, EventArgs e)
+        private void Conto2_Load(object sender, EventArgs e)
         {
             DateTime dataCorrente = DateTime.Now;
             lblData.Text = dataCorrente.ToString("dd/MM/yyyy");

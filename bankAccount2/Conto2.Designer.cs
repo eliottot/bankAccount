@@ -133,6 +133,7 @@
             this.btnPreleva.TabIndex = 38;
             this.btnPreleva.Text = "Preleva";
             this.btnPreleva.UseVisualStyleBackColor = true;
+            this.btnPreleva.Click += new System.EventHandler(this.btnPreleva_Click);
             // 
             // btnDeposita
             // 
@@ -142,6 +143,7 @@
             this.btnDeposita.TabIndex = 37;
             this.btnDeposita.Text = "Deposita";
             this.btnDeposita.UseVisualStyleBackColor = true;
+            this.btnDeposita.Click += new System.EventHandler(this.btnDeposita_Click);
             // 
             // txtInvia
             // 
@@ -187,6 +189,7 @@
             this.Controls.Add(this.txtDeposita);
             this.Name = "Conto2";
             this.Text = "Conto Api 2";
+            this.Load += new System.EventHandler(this.Conto2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
