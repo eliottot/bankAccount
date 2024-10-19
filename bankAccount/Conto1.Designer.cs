@@ -1,6 +1,6 @@
 ﻿namespace bankAccount
 {
-    partial class lblSaldoScritta
+    partial class Conto1
     {
         /// <summary>
         /// Required designer variable.
@@ -39,7 +39,8 @@
             this.lblSaldo = new System.Windows.Forms.Label();
             this.lblData = new System.Windows.Forms.Label();
             this.lblSaldoText = new System.Windows.Forms.Label();
-            this.lblSfondo = new System.Windows.Forms.Label();
+            this.lblTransazioniText = new System.Windows.Forms.Label();
+            this.listBoxTransazioni = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -147,22 +148,37 @@
             this.lblSaldoText.TabIndex = 30;
             this.lblSaldoText.Text = "Saldo:";
             // 
-            // lblSfondo
+            // lblTransazioniText
             // 
-            this.lblSfondo.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.lblSfondo.Location = new System.Drawing.Point(21, 366);
-            this.lblSfondo.Name = "lblSfondo";
-            this.lblSfondo.Size = new System.Drawing.Size(236, 75);
-            this.lblSfondo.TabIndex = 31;
+            this.lblTransazioniText.AutoSize = true;
+            this.lblTransazioniText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTransazioniText.Location = new System.Drawing.Point(13, 331);
+            this.lblTransazioniText.Name = "lblTransazioniText";
+            this.lblTransazioniText.Size = new System.Drawing.Size(164, 20);
+            this.lblTransazioniText.TabIndex = 32;
+            this.lblTransazioniText.Text = "Transazioni di oggi:";
             // 
-            // lblSaldoScritta
+            // listBoxTransazioni
+            // 
+            this.listBoxTransazioni.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.listBoxTransazioni.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listBoxTransazioni.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxTransazioni.FormattingEnabled = true;
+            this.listBoxTransazioni.ItemHeight = 16;
+            this.listBoxTransazioni.Location = new System.Drawing.Point(18, 360);
+            this.listBoxTransazioni.Name = "listBoxTransazioni";
+            this.listBoxTransazioni.Size = new System.Drawing.Size(249, 80);
+            this.listBoxTransazioni.TabIndex = 33;
+            // 
+            // Conto1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(294, 450);
-            this.Controls.Add(this.lblSfondo);
+            this.Controls.Add(this.listBoxTransazioni);
+            this.Controls.Add(this.lblTransazioniText);
             this.Controls.Add(this.lblSaldoText);
             this.Controls.Add(this.lblData);
             this.Controls.Add(this.lblSaldo);
@@ -174,7 +190,7 @@
             this.Controls.Add(this.txtInvia);
             this.Controls.Add(this.txtPreleva);
             this.Controls.Add(this.txtDeposita);
-            this.Name = "lblSaldoScritta";
+            this.Name = "Conto1";
             this.Text = "Conto Api";
             this.Load += new System.EventHandler(this.Conto1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -196,6 +212,7 @@
         private System.Windows.Forms.Label lblSaldo;
         private System.Windows.Forms.Label lblData;
         private System.Windows.Forms.Label lblSaldoText;
-        private System.Windows.Forms.Label lblSfondo;
+        private System.Windows.Forms.Label lblTransazioniText;
+        private System.Windows.Forms.ListBox listBoxTransazioni;
     }
 }

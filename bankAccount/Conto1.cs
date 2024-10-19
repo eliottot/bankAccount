@@ -11,11 +11,11 @@ using System.Windows.Forms;
 
 namespace bankAccount
 {
-    public partial class lblSaldoScritta : Form
+    public partial class Conto1 : Form
     {
         public string percorsoFileDati = @"C:\Users\eliad\source\repos\bankAccount\dati.txt";
         private decimal saldoAttuale;
-        public lblSaldoScritta()
+        public Conto1()
         {
             InitializeComponent();
         }
@@ -26,6 +26,9 @@ namespace bankAccount
             lblSaldo.Text = saldoAttuale.ToString() + " €";
             MessageBox.Show($"Hai aggiunto {importo}€! Il nuovo saldo è: {saldoAttuale}€", "Saldo Aggiornato", MessageBoxButtons.OK, MessageBoxIcon.Information);
             txtDeposita.Text = null;
+            DateTime orarioCorrente = DateTime.Now;
+            string orario = orarioCorrente.ToString("HH:mm:ss");
+            listBoxTransazioni.Items.Add($"Hai depositato {importo}€! ({orario})");
         }
         private void RimuoviSoldi(decimal importo)
         {
@@ -36,6 +39,9 @@ namespace bankAccount
                 lblSaldo.Text = saldoAttuale.ToString() + " €";
                 MessageBox.Show($"Hai rimosso {importo}€! Il nuovo saldo è: {saldoAttuale}€", "Saldo Aggiornato", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtPreleva.Text = null;
+                DateTime orarioCorrente = DateTime.Now;
+                string orario = orarioCorrente.ToString("HH:mm:ss");
+                listBoxTransazioni.Items.Add($"Hai prelevato {importo}€! ({orario})");
             }
             else
             {

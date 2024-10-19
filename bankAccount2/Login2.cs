@@ -8,16 +8,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.LinkLabel;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
-namespace bankAccount
+namespace bankAccount2
 {
-    public partial class Login1 : Form
+    public partial class Login2 : Form
     {
-        public string percorsoFileDati = @"C:\Users\eliad\source\repos\bankAccount\dati.txt";
+        public string percorsoFileDati = @"C:\Users\eliad\source\repos\bankAccount\dati2.txt";
         private decimal saldoAttuale;
-        public Login1()
+        public Login2()
         {
             InitializeComponent();
         }
@@ -32,9 +30,9 @@ namespace bankAccount
             {
                 MessageBox.Show($"Login effettuato! Benvenuto!", "Successo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 saldoAttuale = decimal.Parse(saldo);
-                lblSaldoScritta Conto1 = new lblSaldoScritta();
+                Conto2 Conto2 = new Conto2();
                 this.Hide();
-                Conto1.ShowDialog();
+                Conto2.ShowDialog();
 
                 this.Close();
             }

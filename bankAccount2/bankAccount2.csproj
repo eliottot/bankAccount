@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AC62C663-23C8-4401-8014-9DB5C3B07318}</ProjectGuid>
+    <ProjectGuid>{A83636A3-9C3A-4F5F-B23B-5ADFF2E5E86D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>bankAccount</RootNamespace>
-    <AssemblyName>bankAccount</AssemblyName>
+    <RootNamespace>bankAccount2</RootNamespace>
+    <AssemblyName>bankAccount2</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,25 +46,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Login1.cs">
+    <Compile Include="Conto2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login1.Designer.cs">
-      <DependentUpon>Login1.cs</DependentUpon>
+    <Compile Include="Conto2.Designer.cs">
+      <DependentUpon>Conto2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Conto1.cs">
+    <Compile Include="Login2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Conto1.Designer.cs">
-      <DependentUpon>Conto1.cs</DependentUpon>
+    <Compile Include="Login2.Designer.cs">
+      <DependentUpon>Login2.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Login1.resx">
-      <DependentUpon>Login1.cs</DependentUpon>
+    <EmbeddedResource Include="Conto2.resx">
+      <DependentUpon>Conto2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Conto1.resx">
-      <DependentUpon>Conto1.cs</DependentUpon>
+    <EmbeddedResource Include="Login2.resx">
+      <DependentUpon>Login2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -88,15 +88,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pfp1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\anonymous_profile_100x100.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\anonymous_profile_100x100-removebg-preview.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pfp1-removebg-preview.png" />
