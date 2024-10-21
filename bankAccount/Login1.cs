@@ -15,7 +15,7 @@ namespace bankAccount
 {
     public partial class Login1 : Form
     {
-        public string percorsoFileDati = @"C:\Users\eliad\source\repos\bankAccount\dati.txt";
+        public string percorsoFileDati = @"..\dati.txt";
         private decimal saldoAttuale;
         public Login1()
         {
