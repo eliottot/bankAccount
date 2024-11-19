@@ -52,6 +52,7 @@
             this.btnInvia.TabIndex = 24;
             this.btnInvia.Text = "Invia";
             this.btnInvia.UseVisualStyleBackColor = true;
+            this.btnInvia.Click += new System.EventHandler(this.btnInvia_Click);
             // 
             // btnPreleva
             // 
